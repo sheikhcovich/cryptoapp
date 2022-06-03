@@ -2,10 +2,10 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 const apiHeaders = {
   "x-rapidapi-host": "investing-cryptocurrency-markets.p.rapidapi.com",
-  "x-rapidapi-key": "f31d9de98emshe5c99dd27b83d43p142783jsnebec35dba347",
+  "x-rapidapi-key": `${process.env.REACT_APP_EXCHANGE_KEY}`,
 };
 const baseUrl = "https://api.coingecko.com/api/v3";
-const createRequest = (url) => ({ url });
+const createRequest = (url) => ({ url, apiHeaders });
 export const exchangeApi = createApi({
   reducerPath: "exchangeApi",
   baseQuery: fetchBaseQuery({ baseUrl }),
