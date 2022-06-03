@@ -1,0 +1,33 @@
+.statistics {
+  min-height: 250px;
+}
+.statistics h2 {
+  margin: 15px 0;
+}
+.statisticsRow {
+  display: flex;
+  flex-wrap: wrap;
+}
+.statsItem {
+  width: 50%;
+  min-width: 200px;
+  padding: 10px;
+}
+.statsItem span {
+  display: block;
+  color: gray;
+  font-size: 15px;
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .statistics h2 {
+    font-size: 18px;
+  }
+  .statisticsRow {
+    justify-content: center;
+  }
+  .statistics {
+    text-align: center;
+  }
+}

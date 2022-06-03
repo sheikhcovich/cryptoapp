@@ -1,0 +1,137 @@
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-weight: 900;
+}
+h2 {
+  color: rgb(59, 57, 57);
+}
+.header {
+  color: rgb(11, 11, 179);
+}
+p {
+  color: gray;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.desc {
+  margin: 40px auto;
+  text-align: center;
+}
+.statistics {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 45px;
+  padding: 0 30px;
+}
+.row {
+  width: 400px;
+}
+
+.statsRow {
+  color: rgb(56, 54, 54);
+  padding: 30px 10px;
+  border-bottom: 0.5px solid rgb(187, 186, 186);
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 380px) {
+  h1 {
+    font-size: 20px;
+  }
+  .statistics {
+    text-align: center;
+  }
+  .row {
+    width: 100%;
+  }
+  .statsRow {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    padding: 15px 5px;
+    gap: 10px;
+  }
+  .title :first-child {
+    display: none;
+  }
+}
+.statsRow a {
+  text-decoration: none;
+  font-weight: 800;
+  color: rgb(39, 144, 185);
+}
+.title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-grow: 1;
+}
+.value {
+  font-weight: 900;
+  color: black;
+}
+.blogsRow {
+  width: 48%;
+}
+.blogsRow h2 {
+  font-size: 40px;
+}
+.info {
+  color: rgb(54, 52, 52);
+}
+.info h2 {
+  color: rgb(39, 144, 185);
+}
+.info p {
+  margin-bottom: 45px;
+  color: rgb(39, 144, 185);
+  font-weight: 900;
+  line-height: 26px;
+}
+
+.type {
+  font-weight: 900;
+}
+.error {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+.error button {
+  background-color: darkblue;
+  color: whitesmoke;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  width: 210px;
+}
+
+@media (max-width: 1129px) {
+  .row {
+    width: 48%;
+  }
+}
+@media (max-width: 723px) {
+  .row {
+    width: 99%;
+  }
+  .blogsRow {
+    width: 99%;
+  }
+  .info h2 {
+    font-size: 25px;
+  }
+  .blogsRow h2 {
+    font-size: 25px;
+  }
+}

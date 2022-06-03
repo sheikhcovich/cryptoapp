@@ -1,0 +1,87 @@
+.tableContaineir {
+  overflow-x: scroll;
+}
+.tableContaineir::-webkit-scrollbar {
+  display: none;
+}
+table {
+  width: 100%;
+  min-width: 720px;
+}
+
+thead tr td {
+  width: 25%;
+  font-size: 13.5px;
+  color: rgb(82, 79, 79);
+  font-weight: 600;
+}
+
+.arrowUpward {
+  font-size: 18px;
+  margin-right: 3px;
+  cursor: pointer;
+}
+.desc {
+  transform: rotate(180deg);
+}
+tbody tr td {
+  padding: 20px 0;
+  border-top: 1px solid rgb(235, 232, 232);
+  background-color: white;
+  font-size: 13.5px;
+  color: rgb(82, 79, 79);
+  font-weight: 600;
+  cursor: pointer;
+}
+.linkContainer {
+  display: flex;
+  padding-left: 10px;
+  align-items: center;
+  gap: 5px;
+  height: auto;
+}
+
+tbody tr td a {
+  text-decoration: none;
+  color: rgb(82, 79, 79);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 10px;
+}
+
+tbody tr td img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.exchangeDesc {
+  background-color: white;
+  overflow: hidden;
+}
+.exchangeDesc td {
+  padding: 0;
+}
+tr {
+  transition: 1s;
+}
+tr + tr td div {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: 0.3s;
+  width: 80%;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 25px;
+  color: darkblue;
+}
+
+tr.active + tr td div {
+  height: auto;
+  padding: 30px;
+  overflow: auto;
+}
+tr td {
+  border-top: none;
+}
